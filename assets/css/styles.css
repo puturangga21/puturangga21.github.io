@@ -172,10 +172,7 @@ body.light-theme {
 .light-theme .services__card,
 .light-theme.work__card,
 .light-theme .testimonial__card,
-.light-theme .contact__card,
-.light-theme .footer__title,
-.light-theme .footer__link,
-.light-theme .footer__copy {
+.light-theme .contact__card {
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
 

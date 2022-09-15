@@ -632,13 +632,20 @@
           <div class="contact__content">
             <h3 class="contact__title">Write me your project</h3>
 
-            <form action="" class="contact__form">
+            <form
+              action="https://formsubmit.io/send/puturangga2004@gmail.com"
+              id="contactform"
+              method="POST"
+              class="contact__form"
+            >
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Name</label>
                 <input
                   type="text"
                   placeholder="Insert your name"
                   class="contact__form-input"
+                  name="name"
+                  id="name"
                 />
               </div>
 
@@ -648,22 +655,28 @@
                   type="email"
                   placeholder="Insert your email"
                   class="contact__form-input"
+                  name="email"
+                  id="email"
                 />
               </div>
 
               <div class="contact__form-div contact__form-area">
                 <label for="" class="contact__form-tag">Project</label>
                 <textarea
-                  name=""
-                  id=""
                   cols="30"
                   rows="10"
                   placeholder="Write your project"
                   class="contact__form-input"
+                  name="comment"
+                  id="comment"
                 ></textarea>
               </div>
 
-              <button class="button">Send Message</button>
+              <input name="_formsubmit_id" type="text" style="display: none" />
+
+              <button value="Submit" class="button" type="submit">
+                Send Message
+              </button>
             </form>
           </div>
         </div>

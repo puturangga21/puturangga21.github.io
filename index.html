@@ -512,6 +512,19 @@
             </a>
           </div>
 
+          <div class="work__card mix design">
+            <img src="assets/img/work9.png" alt="" class="work__img" />
+
+            <h3 class="work__title">TravelKu</h3>
+
+            <a
+              href="https://puturangga21.github.io/TravelKu/"
+              class="work__button"
+            >
+              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
           <div class="work__card mix web">
             <img src="assets/img/work8.png" alt="" class="work__img" />
 
@@ -638,12 +651,8 @@
           <div class="contact__content">
             <h3 class="contact__title">Write me your project</h3>
 
-            <form
-              action="https://formsubmit.io/send/puturangga2004@gmail.com"
-              id="contactform"
-              method="POST"
-              class="contact__form"
-            >
+            <h4 class="sent-notification"></h4>
+            <form id="contactform" class="contact__form">
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Name</label>
                 <input
@@ -674,13 +683,16 @@
                   placeholder="Write your project"
                   class="contact__form-input"
                   name="comment"
-                  id="comment"
+                  id="subject"
                 ></textarea>
               </div>
 
-              <input name="_formsubmit_id" type="text" style="display: none" />
-
-              <button value="Submit" class="button" type="submit">
+              <button
+                onclick="sendEmail()"
+                value="Send An Email"
+                class="button"
+                type="button"
+              >
                 Send Message
               </button>
             </form>
@@ -739,6 +751,42 @@
         </span>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    <script type="text/javascript">
+      function sendEmail() {
+        var name = $("#name");
+        var email = $("#email");
+        var subject = $("#subject");
+
+        if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject)) {
+          $.ajax({
+            url: "sendEmail.php",
+            method: "POST",
+            dataType: "json",
+            data: {
+              name: name.val(),
+              email: email.val(),
+              subject: subject.val(),
+            },
+            success: function (response) {
+              $("#contactform")[0].reset();
+              $(".sent-notification").text("Message sent successfully.");
+            },
+          });
+        }
+      }
+      function isNotEmpty(caller) {
+        if (caller.val() == "") {
+          caller.css("border", "1px solid red");
+          return false;
+        } else {
+          caller.css("border", "");
+          return true;
+        }
+      }
+    </script>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>

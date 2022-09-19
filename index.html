@@ -1,803 +1,1203 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--<![endif]-->
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="Name of your web site" />
+    <meta name="author" content="Marketify" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
     />
 
-    <!--=============== BOXICONS ===============-->
+    <title>Portofolio | Rangga</title>
+
+    <!-- STYLES -->
     <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap"
       rel="stylesheet"
     />
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Portofolio Responsive Websites</title>
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="css/dark.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <![endif]-->
+    <!-- /STYLES -->
   </head>
+
   <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="" class="nav__logo">Rangga</a>
+    <!-- PRELOADER -->
+    <!-- <div id="preloader">
+      <div class="loader_line"></div>
+    </div> -->
+    <!-- /PRELOADER -->
 
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home"></i>
-              </a>
+    <!-- WRAPPER ALL -->
+
+    <div class="trito_tm_all_wrap" data-magic-cursor="show">
+      <!-- MOBILE MENU -->
+      <div class="trito_tm_mobile_menu">
+        <div class="mobile_menu_inner">
+          <div class="mobile_in">
+            <div class="logo">
+              <a href="#"><img src="img/logo/logo.png" alt="" /></a>
+            </div>
+            <div class="trigger">
+              <div class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown_inner">
+            <ul class="anchor_nav">
+              <li class="current"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /MOBILE MENU -->
+
+      <!-- HEADER -->
+      <div class="trito_tm_header">
+        <div class="container wide">
+          <div class="header_in">
+            <div class="logo">
+              <a href="#"><img src="img/logo/logo.png" alt="" /></a>
+            </div>
+            <div class="menu">
+              <ul class="anchor_nav">
+                <li class="current"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="button">
+              <a href="img/cv/1.jpg" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /HEADER -->
+
+      <!-- HERO -->
+      <div class="trito_tm_hero" id="home">
+        <div class="background" data-img-url="img/hero/1.jpg"></div>
+        <div class="container wide">
+          <div class="content">
+            <div class="details">
+              <span class="hi">Hi I'm</span>
+              <h3 class="name">Putu Rangga</h3>
+              <p class="text">Web developer based in Bali</p>
+              <div class="buttons">
+                <div class="trito_tm_button">
+                  <a href="#">Say Hello</a>
+                </div>
+                <div class="simple_button">
+                  <a class="anchor" href="#portfolio">My Work</a>
+                </div>
+              </div>
+            </div>
+            <div class="quote">
+              <img class="svg" src="img/svg/quote2.svg" alt="" />
+              <p>
+                I’m listen to your needs &amp; thoughtfully interpret your
+                requirements.“
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="avatar">
+          <img src="#" alt="" />
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#"
+                ><img class="svg" src="img/svg/social/be.svg" alt=""
+              /></a>
             </li>
-
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="bx bx-user"></i>
-              </a>
+            <li>
+              <a href="#"
+                ><img class="svg" src="img/svg/social/dribbble.svg" alt=""
+              /></a>
             </li>
-
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bxs-book"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#work" class="nav__link">
-                <i class="bx bx-briefcase"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="bx bxs-message-square-dots"></i>
-              </a>
+            <li>
+              <a href="#"
+                ><img class="svg" src="img/svg/social/instagarm.svg" alt=""
+              /></a>
             </li>
           </ul>
         </div>
-
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-      </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== HOME ===============-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__data">
-            <span class="home__greeting">Hello, I'm</span>
-            <h1 class="home__name">Putu Rangga</h1>
-            <h3 class="home__education">Frontend Developer</h3>
-
-            <div class="home__buttons">
-              <a
-                href="assets/pdf/CV_I PUTU RANGGA SUTHA SANTANA.pdf"
-                class="button button--ghost"
-              >
-                Download CV
-              </a>
-              <a href="#about" class="button">About me</a>
-            </div>
-          </div>
-
-          <div class="home__handle">
-            <img src="assets/imgr/1.png" alt="" class="home__img" />
-          </div>
-
-          <div class="home__social">
-            <a href="" class="home__social-link">
-              <i class="bx bxl-linkedin"></i>
-            </a>
-
-            <a href="" class="home__social-link">
-              <i class="bx bxl-github"></i>
-            </a>
-
-            <a href="" class="home__social-link">
-              <i class="bx bxl-dribbble"></i>
-            </a>
-          </div>
-
-          <a href="#about" class="home__scroll">
-            <i class="bx bx-mouse-alt home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
-          </a>
-        </div>
-      </section>
-
-      <!--=============== ABOUT ===============-->
-      <section class="about section" id="about">
-        <span class="section__subtitle">My Intro</span>
-        <h2 class="section__title">About Me</h2>
-
-        <div class="about__container container grid">
-          <img src="assets/imgr/2.JPG" class="about__img" />
-
-          <div class="about__data">
-            <div class="about__info">
-              <div class="about__box">
-                <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">8 Years Working</span>
-              </div>
-
-              <div class="about__box">
-                <i class="bx bx-briefcase about__icon"></i>
-                <h3 class="about__title">Completed</h3>
-                <span class="about__subtitle">48 + Projects</span>
-              </div>
-
-              <div class="about__box">
-                <i class="bx bx-support about__icon"></i>
-                <h3 class="about__title">Support</h3>
-                <span class="about__subtitle">Online 24/7</span>
-              </div>
-            </div>
-
-            <p class="about__description">
-              Frontend developer, I create web pages with UI / UX user
-              interface, I have years of experience and many clients are happy
-              with the projects carried out.
-            </p>
-
-            <a href="#contact" class="button">Contact Me</a>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== SKILLS ===============-->
-      <section class="skills section" id="skills">
-        <span class="section__subtitle">My abilities</span>
-        <h2 class="section__title">My Experience</h2>
-
-        <div class="skills__container container grid">
-          <div class="skills__content">
-            <h3 class="skills__title">Frontend Developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills__content">
-            <h3 class="skills__title">Backend Developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Node Js</h3>
-                    <span class="skills__level">basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Firebase</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== SERVICES ===============-->
-      <section class="services section">
-        <span class="section__subtitle">My Services</span>
-        <h2 class="section__title">What I Offer</h2>
-
-        <div class="services__container container grid">
-          <div class="services__card">
-            <h3 class="services__title">
-              Product <br />
-              Designer
-            </h3>
-
-            <span class="services__button">
-              See more <i class="bx bx-right-arrow-alt services__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-
-                <h3 class="services__modal-title">Product Designer</h3>
-                <p class="services__modal-description">
-                  Service with more than 3 years of experience. Providing
-                  quality work to clients and companies.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I develop the user interface.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Web page development.</p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I create ux element interactions.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I position your company brand.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and mockups of products for companies.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="services__card">
-            <h3 class="services__title">
-              Ui/Ux <br />
-              Designer
-            </h3>
-
-            <span class="services__button">
-              See more <i class="bx bx-right-arrow-alt services__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-
-                <h3 class="services__modal-title">Ui/Ux Designer</h3>
-                <p class="services__modal-description">
-                  Service with more than 3 years of experience. Providing
-                  quality work to clients and companies.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I develop the user interface.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Web page development.</p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I create ux element interactions.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I position your company brand.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and mockups of products for companies.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="services__card">
-            <h3 class="services__title">
-              Visual <br />
-              Designer
-            </h3>
-
-            <span class="services__button">
-              See more <i class="bx bx-right-arrow-alt services__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-
-                <h3 class="services__modal-title">Visual Designer</h3>
-                <p class="services__modal-description">
-                  Service with more than 3 years of experience. Providing
-                  quality work to clients and companies.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I develop the user interface.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Web page development.</p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I create ux element interactions.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I position your company brand.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and mockups of products for companies.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== WORK ===============-->
-      <section class="work section" id="work">
-        <span class="section__subtitle">My Portfolio</span>
-        <h2 class="section__title">Recent Works</h2>
-
-        <div class="work__filters">
-          <span class="work__item active-work" data-filter="all">All</span>
-          <span class="work__item" data-filter=".web">Web</span>
-          <span class="work__item" data-filter=".movil">Mobile</span>
-          <span class="work__item" data-filter=".design">Design</span>
-        </div>
-
-        <div class="work__container container grid">
-          <div class="work__card mix web">
-            <img src="assets/img/work66.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Suit Jawa</h3>
-
-            <a
-              href="https://puturangga21.github.io/suwit-jawa/"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix movil">
-            <img src="assets/img/work5.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">App Movil</h3>
-
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix design">
-            <img src="assets/img/work7.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Simple LandingPage</h3>
-
-            <a
-              href="https://puturangga21.github.io/landingpage-v1/"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix design">
-            <img src="assets/img/work9.png" alt="" class="work__img" />
-
-            <h3 class="work__title">TravelKu</h3>
-
-            <a
-              href="https://puturangga21.github.io/TravelKu/"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix web">
-            <img src="assets/img/work8.png" alt="" class="work__img" />
-
-            <h3 class="work__title">LazyTalk</h3>
-
-            <a
-              href="https://puturangga21.github.io/lazytalk/"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix movil">
-            <img src="assets/img/work5.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">App Movil</h3>
-
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section">
-        <span class="section__subtitle">My clients say</span>
-        <h2 class="section__title">Testimonial</h2>
-
-        <div class="testimonial__container container swiper">
-          <div class="swiper-wrapper">
-            <div class="testimonial__card swiper-slide">
-              <img src="assets/imgr/3.jpg" alt="" class="testimonial__img" />
-
-              <h3 class="testimonial__name">Exel Tediawan</h3>
-              <p class="testimonial__description">
-                Mantap kali, sesuai dengan apa yang di iklankan! saya sangat
-                senang
-              </p>
-            </div>
-
-            <div class="testimonial__card swiper-slide">
-              <img src="assets/imgr/4.jpg" alt="" class="testimonial__img" />
-
-              <h3 class="testimonial__name">Reva Prasetya</h3>
-              <p class="testimonial__description">
-                Pengerjaan yang sangat cepat! selanjutnya akan pesan project
-                disini lagi!
-              </p>
-            </div>
-
-            <div class="testimonial__card swiper-slide">
-              <img src="assets/imgr/5.PNG" alt="" class="testimonial__img" />
-
-              <h3 class="testimonial__name">Anggiat Pandapotan</h3>
-              <p class="testimonial__description">
-                Asik asik asik! website yang saya buat disini sangat responsiv!
-              </p>
-            </div>
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact">
-        <span class="section__subtitle">Get in touch</span>
-        <h2 class="section__title">Contact Me</h2>
-
-        <div class="contact__container container grid">
-          <div class="contact__content">
-            <h3 class="contact__title">Talk to me</h3>
-
-            <div class="contact__info">
-              <div class="contact__card">
-                <i class="bx bx-mail-send contact__card-icon"></i>
-                <h3 class="contact__card-title">Email</h3>
-                <span class="contact__card-data">puturangga21@gmail.com</span>
-
-                <a
-                  href="mailto:puturangga21@gmail.com"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  Write me
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-
-              <div class="contact__card">
-                <i class="bx bxl-whatsapp contact__card-icon"></i>
-                <h3 class="contact__card-title">Whatsapp</h3>
-                <span class="contact__card-data">081246545857</span>
-
-                <a
-                  href="https://api.whatsapp.com/send?phone=+6281246545857&text=Hello, more information!"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  Write me
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-
-              <div class="contact__card">
-                <i class="bx bxl-instagram contact__card-icon"></i>
-                <h3 class="contact__card-title">Instagram</h3>
-                <span class="contact__card-data">puturangga21</span>
-
-                <a
-                  href="https://www.instagram.com/puturangga21/"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  Write me
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact__content">
-            <h3 class="contact__title">Write me your project</h3>
-
-            <h4 class="sent-notification"></h4>
-            <form id="contactform" class="contact__form">
-              <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Name</label>
-                <input
-                  type="text"
-                  placeholder="Insert your name"
-                  class="contact__form-input"
-                  name="name"
-                  id="name"
-                />
-              </div>
-
-              <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Mail</label>
-                <input
-                  type="email"
-                  placeholder="Insert your email"
-                  class="contact__form-input"
-                  name="email"
-                  id="email"
-                />
-              </div>
-
-              <div class="contact__form-div contact__form-area">
-                <label for="" class="contact__form-tag">Project</label>
-                <textarea
-                  cols="30"
-                  rows="10"
-                  placeholder="Write your project"
-                  class="contact__form-input"
-                  name="comment"
-                  id="subject"
-                ></textarea>
-              </div>
-
-              <button
-                onclick="sendEmail()"
-                value="Send An Email"
-                class="button"
-                type="button"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-      <div class="footer__container container">
-        <h1 class="footer__title">Rangga</h1>
-
-        <ul class="footer__list">
-          <li>
-            <a href="#about" class="footer__link">About</a>
-          </li>
-
-          <li>
-            <a href="#work" class="footer__link">Projects</a>
-          </li>
-
-          <li>
-            <a href="#testimonial" class="footer__link">Testimonial</a>
-          </li>
-        </ul>
-
-        <ul class="footer__social">
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-facebook"></i>
-          </a>
-
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-discord-alt"></i>
-          </a>
-        </ul>
-
-        <span class="footer__copy">
-          &#169; Putu Rangga. All rigths reserved
-        </span>
       </div>
-    </footer>
+      <!-- /HERO -->
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+      <!-- PARTNERS -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_partner">
+          <div class="container">
+            <div class="title">
+              <span>My Clients</span>
+            </div>
+            <div class="partners_list">
+              <ul class="owl-carousel">
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/1.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/2.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/3.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/4.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/5.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/6.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/7.png" alt="" /></a>
+                </li>
+                <li class="item">
+                  <a href="#"><img src="img/partners/light/8.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /PARTNERS -->
 
-    <script type="text/javascript">
-      function sendEmail() {
-        var name = $("#name");
-        var email = $("#email");
-        var subject = $("#subject");
+      <!-- FEATURES -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_features">
+          <div class="container">
+            <div class="features_list">
+              <ul>
+                <li>
+                  <div class="list_inner">
+                    <div class="title">
+                      <img class="svg" src="img/svg/lamp.svg" alt="" />
+                      <h3>Dedication</h3>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Most common methods for designing websites that work
+                        well on desktop design
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <div class="title">
+                      <img class="svg" src="img/svg/home.svg" alt="" />
+                      <h3>Smart Work</h3>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Most common methods for designing websites that work
+                        well on desktop design
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <div class="title">
+                      <img class="svg" src="img/svg/brain.svg" alt="" />
+                      <h3>Intelligence</h3>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Most common methods for designing websites that work
+                        well on desktop design
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /FEATURES -->
 
-        if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject)) {
-          $.ajax({
-            url: "sendEmail.php",
-            method: "POST",
-            dataType: "json",
-            data: {
-              name: name.val(),
-              email: email.val(),
-              subject: subject.val(),
-            },
-            success: function (response) {
-              $("#contactform")[0].reset();
-              $(".sent-notification").text("Message sent successfully.");
-            },
-          });
-        }
-      }
-      function isNotEmpty(caller) {
-        if (caller.val() == "") {
-          caller.css("border", "1px solid red");
-          return false;
-        } else {
-          caller.css("border", "");
-          return true;
-        }
-      }
-    </script>
+      <!-- SKILLS -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_skills">
+          <div class="container">
+            <div class="skills_in">
+              <div class="left">
+                <div class="trito_tm_main_title">
+                  <span>My Skills</span>
+                  <h3>Everyday develop skill</h3>
+                </div>
+                <div class="text">
+                  <p>
+                    While at Neverbland over the last few years, I've worked on
+                    web and product solutions for a range of startups, in a
+                    variety of industries. Work skills used
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="background" data-img-url="img/skills/1.jpg"></div>
+                <div class="content">
+                  <ul>
+                    <li><span>HTML5</span></li>
+                    <li><span>PHP</span></li>
+                    <li><span>Bootstrap</span></li>
+                    <li><span>CSS3</span></li>
+                    <li><span>JS</span></li>
+                    <li><span>React</span></li>
+                    <li><span>UI/UX</span></li>
+                    <li><span>Laravel</span></li>
+                    <li><span>API</span></li>
+                  </ul>
+                </div>
+                <span class="shape1"
+                  ><img class="svg" src="img/svg/frame.svg" alt=""
+                /></span>
+                <span class="shape2"
+                  ><img class="svg" src="img/svg/frame2.svg" alt=""
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /SKILLS -->
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+      <!-- COUNTER -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_counter_section">
+          <div class="container">
+            <div class="counter_list">
+              <ul>
+                <li>
+                  <div class="list_inner">
+                    <div class="number_wrap">
+                      <span class="in"
+                        ><h3>
+                          <span
+                            class="counter_item"
+                            data-from="0"
+                            data-to="120"
+                            data-speed="2000"
+                            >0</span
+                          >+
+                        </h3></span
+                      >
+                    </div>
+                    <span class="title">Downloaded products</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <div class="number_wrap">
+                      <span class="in"
+                        ><h3>
+                          <span
+                            class="counter_item"
+                            data-from="0"
+                            data-to="40"
+                            data-speed="2000"
+                            >0</span
+                          >K
+                        </h3></span
+                      >
+                    </div>
+                    <span class="title">Open source projects</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list_inner">
+                    <div class="number_wrap">
+                      <span class="in"
+                        ><h3>
+                          <span
+                            class="counter_item"
+                            data-from="0"
+                            data-to="100"
+                            data-speed="2000"
+                            >0</span
+                          >%
+                        </h3></span
+                      >
+                    </div>
+                    <span class="title">Satisfaction Guarantee</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /COUNTER -->
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+      <!-- ABOUT -->
+      <div class="trito_tm_section" id="about">
+        <div class="trito_tm_about">
+          <div class="background" data-img-url="img/about/background.jpg"></div>
+          <div class="container">
+            <div class="about_in">
+              <div class="left">
+                <img src="img/about/2.JPG" alt="" />
+                <div class="experience">
+                  <h3>4+</h3>
+                  <span
+                    >Years of<br />
+                    experience</span
+                  >
+                </div>
+              </div>
+              <div class="right">
+                <div class="trito_tm_main_title">
+                  <span>Abut Me</span>
+                  <h3>I can develop that help people</h3>
+                </div>
+                <div class="text">
+                  <p>
+                    Dliquip ex ea commo do conse namber onequa ute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatu epteur sint occaecat cupidatat
+                  </p>
+                  <p>
+                    Krnon proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum. Sed ut perspiciatis unde omnis
+                  </p>
+                </div>
+                <div class="trito_tm_button_extra">
+                  <a class="anchor" href="#contact">Hire Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="shape"
+            ><img class="svg" src="img/svg/element3.svg" alt=""
+          /></span>
+          <span class="shape2"
+            ><img class="svg" src="img/svg/element3.svg" alt=""
+          /></span>
+        </div>
+      </div>
+      <!-- /ABOUT -->
 
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
+      <!-- TESTIMONIALS -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_testimonials">
+          <div class="container">
+            <div class="testimonials_list">
+              <ul class="owl-carousel">
+                <li>
+                  <div class="left">
+                    <div class="image">
+                      <img src="img/testimonials/3.jpg" alt="" />
+                      <img class="svg" src="img/svg/elements.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="big">
+                      <p>
+                        “Working very perfectly.<br />
+                        Super fast developing skills”
+                      </p>
+                      <img class="svg" src="img/svg/quote.svg" alt="" />
+                    </div>
+                    <div class="normal">
+                      <p>
+                        “Awesome App! Easy to use, it has a lot of options to
+                        design whatever you need, it is professional and fun. I
+                        was very successful creating my profile using designer
+                        which gave me unbelievable reach &amp; appreciation.”
+                      </p>
+                    </div>
+                    <div class="details">
+                      <h3>- Exel Tediawan</h3>
+                      <span>Trainee Manager, Me Gacoan</span>
+                    </div>
+                  </div>
+                </li>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+                <li>
+                  <div class="left">
+                    <div class="image">
+                      <img src="img/testimonials/4.jpg" alt="" />
+                      <img class="svg" src="img/svg/elements.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="big">
+                      <p>
+                        “This template is awesome!<br />Super easy to update in
+                        a editor.”
+                      </p>
+                      <img class="svg" src="img/svg/quote.svg" alt="" />
+                    </div>
+                    <div class="normal">
+                      <p>
+                        “The documentation is great and the support via live
+                        chat was perfect. They helped me out super quick. When I
+                        had a minor code customization to make but didn't know
+                        where to make the change in their code. Customer Support
+                        perfect!”
+                      </p>
+                    </div>
+                    <div class="details">
+                      <h3>- Reva Prasetya</h3>
+                      <span>Web Developer, STIKOM Bali</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="left">
+                    <div class="image">
+                      <img src="img/testimonials/6.PNG" alt="" />
+                      <img class="svg" src="img/svg/elements.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="big">
+                      <p>
+                        “Helpful customer support.<br />And great designed
+                        template”
+                      </p>
+                      <img class="svg" src="img/svg/quote.svg" alt="" />
+                    </div>
+                    <div class="normal">
+                      <p>
+                        “Minimal design, incredibly well documented, and an
+                        absolute pleasure to use! The customer support is one of
+                        the absolute best I've ever had the pleasure of
+                        interacting with. Quick, courteous, and extremely
+                        helpful!”
+                      </p>
+                    </div>
+                    <div class="details">
+                      <h3>- Anggiat Pandapotan</h3>
+                      <span>Supervisor Trainer, Indomaret</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <a class="prev_button" href="#"
+                ><img class="svg" src="img/svg/left.svg" alt=""
+              /></a>
+              <a class="next_button" href="#"
+                ><img class="svg" src="img/svg/right.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /TESTIMONIALS -->
+
+      <!-- PORTFOLIO -->
+      <div class="trito_tm_section" id="portfolio">
+        <div class="trito_tm_portfolio">
+          <ul class="gallery_zoom">
+            <li>
+              <div class="list_inner">
+                <div class="image">
+                  <div class="main" data-img-url="img/portfolio/1.png"></div>
+                </div>
+                <div class="details">
+                  <h3>Project Detail</h3>
+                  <img class="svg" src="img/svg/link.svg" alt="" />
+                </div>
+                <a class="trito_tm_full_link popup_link" href="#"></a>
+
+                <!-- Modalbox Info Start -->
+                <div class="hidden_content">
+                  <div class="popup_details">
+                    <div class="main_details">
+                      <div class="textbox">
+                        <p>
+                          We live in a world where we need to move quickly and
+                          iterate on our ideas as flexibly as possible.
+                        </p>
+                        <p>
+                          Mockups are useful both for the creative phase of the
+                          project - for instance when you're trying to figure
+                          out your user flows or the proper visual hierarchy -
+                          and the production phase when they phase when they
+                          will represent the target product. Building mockups
+                          strikes the ideal balance ease of modification.
+                        </p>
+                      </div>
+                      <div class="detailbox">
+                        <ul>
+                          <li>
+                            <span class="first">Client</span>
+                            <span>Adit Pramana</span>
+                          </li>
+                          <li>
+                            <span class="first">Category</span>
+                            <span><a href="#">Detail</a></span>
+                          </li>
+                          <li>
+                            <span class="first">Date</span>
+                            <span>July 01, 2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="additional_images">
+                      <ul>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/1.png"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/2.png"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/3.png"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modalbox Info End -->
+              </div>
+            </li>
+
+            <li>
+              <div class="list_inner">
+                <div class="image">
+                  <div class="main" data-img-url="img/portfolio/1.jpg"></div>
+                </div>
+                <div class="details">
+                  <h3>Project Detail</h3>
+                  <img class="svg" src="img/svg/link.svg" alt="" />
+                </div>
+                <a class="trito_tm_full_link popup_link" href="#"></a>
+
+                <!-- Modalbox Info Start -->
+                <div class="hidden_content">
+                  <div class="popup_details">
+                    <div class="main_details">
+                      <div class="textbox">
+                        <p>
+                          We live in a world where we need to move quickly and
+                          iterate on our ideas as flexibly as possible.
+                        </p>
+                        <p>
+                          Mockups are useful both for the creative phase of the
+                          project - for instance when you're trying to figure
+                          out your user flows or the proper visual hierarchy -
+                          and the production phase when they phase when they
+                          will represent the target product. Building mockups
+                          strikes the ideal balance ease of modification.
+                        </p>
+                      </div>
+                      <div class="detailbox">
+                        <ul>
+                          <li>
+                            <span class="first">Client</span>
+                            <span>Alvaro Morata</span>
+                          </li>
+                          <li>
+                            <span class="first">Category</span>
+                            <span><a href="#">Detail</a></span>
+                          </li>
+                          <li>
+                            <span class="first">Date</span>
+                            <span>July 01, 2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="additional_images">
+                      <ul>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/1.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/2.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/3.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modalbox Info End -->
+              </div>
+            </li>
+
+            <li>
+              <div class="list_inner">
+                <div class="image">
+                  <div class="main" data-img-url="img/portfolio/1.jpg"></div>
+                </div>
+                <div class="details">
+                  <h3>Project Detail</h3>
+                  <img class="svg" src="img/svg/link.svg" alt="" />
+                </div>
+                <a class="trito_tm_full_link popup_link" href="#"></a>
+
+                <!-- Modalbox Info Start -->
+                <div class="hidden_content">
+                  <div class="popup_details">
+                    <div class="main_details">
+                      <div class="textbox">
+                        <p>
+                          We live in a world where we need to move quickly and
+                          iterate on our ideas as flexibly as possible.
+                        </p>
+                        <p>
+                          Mockups are useful both for the creative phase of the
+                          project - for instance when you're trying to figure
+                          out your user flows or the proper visual hierarchy -
+                          and the production phase when they phase when they
+                          will represent the target product. Building mockups
+                          strikes the ideal balance ease of modification.
+                        </p>
+                      </div>
+                      <div class="detailbox">
+                        <ul>
+                          <li>
+                            <span class="first">Client</span>
+                            <span>Alvaro Morata</span>
+                          </li>
+                          <li>
+                            <span class="first">Category</span>
+                            <span><a href="#">Detail</a></span>
+                          </li>
+                          <li>
+                            <span class="first">Date</span>
+                            <span>July 01, 2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="additional_images">
+                      <ul>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/1.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/2.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/3.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modalbox Info End -->
+              </div>
+            </li>
+
+            <li>
+              <div class="list_inner">
+                <div class="image">
+                  <div class="main" data-img-url="img/portfolio/1.jpg"></div>
+                </div>
+                <div class="details">
+                  <h3>Project Detail</h3>
+                  <img class="svg" src="img/svg/link.svg" alt="" />
+                </div>
+                <a class="trito_tm_full_link popup_link" href="#"></a>
+
+                <!-- Modalbox Info Start -->
+                <div class="hidden_content">
+                  <div class="popup_details">
+                    <div class="main_details">
+                      <div class="textbox">
+                        <p>
+                          We live in a world where we need to move quickly and
+                          iterate on our ideas as flexibly as possible.
+                        </p>
+                        <p>
+                          Mockups are useful both for the creative phase of the
+                          project - for instance when you're trying to figure
+                          out your user flows or the proper visual hierarchy -
+                          and the production phase when they phase when they
+                          will represent the target product. Building mockups
+                          strikes the ideal balance ease of modification.
+                        </p>
+                      </div>
+                      <div class="detailbox">
+                        <ul>
+                          <li>
+                            <span class="first">Client</span>
+                            <span>Alvaro Morata</span>
+                          </li>
+                          <li>
+                            <span class="first">Category</span>
+                            <span><a href="#">Detail</a></span>
+                          </li>
+                          <li>
+                            <span class="first">Date</span>
+                            <span>July 01, 2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="additional_images">
+                      <ul>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/1.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/2.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/3.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modalbox Info End -->
+              </div>
+            </li>
+
+            <li>
+              <div class="list_inner">
+                <div class="image">
+                  <div class="main" data-img-url="img/portfolio/1.jpg"></div>
+                </div>
+                <div class="details">
+                  <h3>Project Detail</h3>
+                  <img class="svg" src="img/svg/link.svg" alt="" />
+                </div>
+                <a class="trito_tm_full_link popup_link" href="#"></a>
+
+                <!-- Modalbox Info Start -->
+                <div class="hidden_content">
+                  <div class="popup_details">
+                    <div class="main_details">
+                      <div class="textbox">
+                        <p>
+                          We live in a world where we need to move quickly and
+                          iterate on our ideas as flexibly as possible.
+                        </p>
+                        <p>
+                          Mockups are useful both for the creative phase of the
+                          project - for instance when you're trying to figure
+                          out your user flows or the proper visual hierarchy -
+                          and the production phase when they phase when they
+                          will represent the target product. Building mockups
+                          strikes the ideal balance ease of modification.
+                        </p>
+                      </div>
+                      <div class="detailbox">
+                        <ul>
+                          <li>
+                            <span class="first">Client</span>
+                            <span>Alvaro Morata</span>
+                          </li>
+                          <li>
+                            <span class="first">Category</span>
+                            <span><a href="#">Detail</a></span>
+                          </li>
+                          <li>
+                            <span class="first">Date</span>
+                            <span>July 01, 2022</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="additional_images">
+                      <ul>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/1.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/2.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list_inner">
+                            <div class="my_image">
+                              <img src="img/thumbs/4-2.jpg" alt="" />
+                              <div
+                                class="main"
+                                data-img-url="img/service/3.jpg"
+                              ></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Modalbox Info End -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /PORTFOLIO -->
+
+      <!-- FAQ -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_faq">
+          <div class="container">
+            <div class="trito_tm_main_title centered">
+              <span>FAQ</span>
+              <h3>Few questions client normally ask me</h3>
+            </div>
+            <div class="accordion_wrap">
+              <div class="accordion">
+                <div class="accordion_header">
+                  <span class="plus"></span>
+                  <p>What is your hourly rate?</p>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    We help our client suceed by creating identities, digital
+                    experiences, and printmaterials that communicate clearly,
+                    achieve marketing goals, and look fantastic.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion_header">
+                  <span class="plus"></span>
+                  <p>What type of projects do you take on?</p>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    We help our client suceed by creating identities, digital
+                    experiences, and printmaterials that communicate clearly,
+                    achieve marketing goals, and look fantastic.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion_header">
+                  <span class="plus"></span>
+                  <p>How do you charge for projects?</p>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    We help our client suceed by creating identities, digital
+                    experiences, and printmaterials that communicate clearly,
+                    achieve marketing goals, and look fantastic.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion_header">
+                  <span class="plus"></span>
+                  <p>What time-zone do you work in?</p>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    We help our client suceed by creating identities, digital
+                    experiences, and printmaterials that communicate clearly,
+                    achieve marketing goals, and look fantastic.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion_header">
+                  <span class="plus"></span>
+                  <p>How often can we communicate?</p>
+                </div>
+                <div class="accordion_content">
+                  <p>
+                    We help our client suceed by creating identities, digital
+                    experiences, and printmaterials that communicate clearly,
+                    achieve marketing goals, and look fantastic.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /FAQ -->
+
+      <!-- FREELANCE -->
+      <div class="trito_tm_section">
+        <div class="trito_tm_freelance">
+          <div class="background" data-img-url="img/hero/1.jpg"></div>
+          <div class="content">
+            <div class="text">
+              <p>I'm available for freelance work</p>
+            </div>
+            <div class="trito_tm_button">
+              <a class="anchor" href="#contact">Let’s Contact with Me</a>
+            </div>
+          </div>
+          <span class="shape"
+            ><img class="svg" src="img/svg/element3.svg" alt=""
+          /></span>
+          <span class="shape2"
+            ><img class="svg" src="img/svg/element3.svg" alt=""
+          /></span>
+        </div>
+      </div>
+      <!-- /FREELANCE -->
+
+      <!-- CONTACT -->
+      <div class="trito_tm_section" id="contact">
+        <div class="trito_tm_contact">
+          <div
+            class="background"
+            data-img-url="img/contact/background.jpg"
+          ></div>
+          <div class="container">
+            <div class="content">
+              <div class="left">
+                <div class="trito_tm_main_title">
+                  <span>Contact</span>
+                  <h3>Drop me a line</h3>
+                </div>
+                <div class="short">
+                  <ul>
+                    <li>
+                      <span>Call:</span>
+                      <a href="#">+ 123 456 7890</a>
+                    </li>
+                    <li>
+                      <span>Email:</span>
+                      <a href="#">support@smith.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="copy">
+                  <img src="img/logo/light.png" alt="" />
+                  <p>&copy; 2022 Trito. All Rights Reserved</p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="fields">
+                  <form
+                    action="/"
+                    method="post"
+                    class="contact_form"
+                    id="contact_form"
+                    autocomplete="off"
+                  >
+                    <div
+                      class="returnmessage"
+                      data-success="Your message has been received, We will contact you soon."
+                    ></div>
+                    <div class="empty_notice">
+                      <span>Please Fill Required Fields</span>
+                    </div>
+                    <div class="first">
+                      <ul>
+                        <li>
+                          <input id="name" type="text" placeholder="Name" />
+                        </li>
+                        <li>
+                          <input id="email" type="text" placeholder="Email" />
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="last">
+                      <textarea id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="trito_tm_button">
+                      <a id="send_message" href="#">Submit Message</a>
+                    </div>
+
+                    <!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
+                  </form>
+                </div>
+                <ul class="social">
+                  <li>
+                    <a href="#"
+                      ><img class="svg" src="img/svg/social/be.svg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        class="svg"
+                        src="img/svg/social/dribbble.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        class="svg"
+                        src="img/svg/social/instagarm.svg"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="icon"
+            ><img class="svg" src="img/svg/element2.svg" alt=""
+          /></span>
+          <span class="icon2"
+            ><img class="svg" src="img/svg/element2.svg" alt=""
+          /></span>
+        </div>
+      </div>
+      <!-- /CONTACT -->
+
+      <!-- CURSOR -->
+      <div class="mouse-cursor cursor-outer"></div>
+      <div class="mouse-cursor cursor-inner"></div>
+      <!-- /CURSOR -->
+    </div>
+    <!-- / WRAPPER ALL -->
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 10]>
+      <script type="text/javascript" src="js/ie8.js"></script>
+    <![endif]-->
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+    <!-- /SCRIPTS -->
   </body>
 </html>
